@@ -61,7 +61,7 @@ coeff = pd.DataFrame(model.coef_, X.columns, columns=['Coefficients'])
 ## Making predictions on the test data set
 predictions = model.predict(X_test)
 
-# graph to see if the model fit the dataset
+# graph to see if the model fits the data
 sns.scatterplot(x=predictions, y=y_test)
 plt.xlim(200)
 plt.xlabel("Predictions")
