@@ -56,7 +56,7 @@ model.fit(X_train, y_train)
 
 # Display the coefficients
 coeff = pd.DataFrame(model.coef_, X.columns, columns=['Coefficients'])
-print(coeff)
+#print(coeff)
 
 ## Making predictions on the test data set
 predictions = model.predict(X_test)
@@ -66,7 +66,9 @@ sns.scatterplot(x=predictions, y=y_test)
 plt.xlim(200)
 plt.xlabel("Predictions")
 plt.title("Evaluation of our Linear Regression Model")
-plt.show()
+#plt.show()
 
 ## Evaluation of the model with metrics
-#
+print("Mean Absolute Error : ", mean_absolute_error(y_test, predictions))
+print("Mean Squared Error : ", mean_squared_error(y_test, predictions))
+print("Root Mean Squared Error : ", math.sqrt(mean_squared_error(y_test, predictions)))
