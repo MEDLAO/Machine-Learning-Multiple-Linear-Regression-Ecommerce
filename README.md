@@ -1,4 +1,4 @@
-## Projet : Multiple Linear Regression E-commerce
+## Project : Multiple Linear Regression E-commerce
 ![](Pictures/Figure_3.png)
 ### Table of contents :
 
@@ -65,7 +65,7 @@ tzdata 2023.3
   * Residual analysis of the training data
 
 ## 5. Conclusion :
-![](Pictures/Figure_4.png)
+
   * 
   * 
   * 
