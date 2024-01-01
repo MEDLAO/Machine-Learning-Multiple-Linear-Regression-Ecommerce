@@ -6,16 +6,8 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, mean_absolute_error
 import math
 
-### Problem Statement
-# This dataset is having data of customers who buys clothes online.
-# The store offers in-store style and clothing advice sessions. Customers come in to the store,
-# have sessions/meetings with a personal stylist, then they can go home and order either on a
-# mobile app or website for the clothes they want.
-# The company is trying to decide whether to focus their efforts
-# on their mobile app experience or their website.
 
 ### Dataset
-
 # Loading the data
 df = pd.read_csv("ecommerce.csv")
 
@@ -73,7 +65,7 @@ print("Mean Absolute Error : ", mean_absolute_error(y_test, predictions))
 print("Mean Squared Error : ", mean_squared_error(y_test, predictions))
 print("Root Mean Squared Error : ", math.sqrt(mean_squared_error(y_test, predictions)))
 
-## Residual analysis of the train data
+## Residual analysis of the training data
 # It tells us how much the errors are distributed across the model.
 # A good residual analysis will signify that the mean is centred around 0.
 residuals = y_test - predictions
