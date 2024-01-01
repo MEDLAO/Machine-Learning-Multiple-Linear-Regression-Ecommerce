@@ -72,3 +72,11 @@ plt.title("Evaluation of our Linear Regression Model")
 print("Mean Absolute Error : ", mean_absolute_error(y_test, predictions))
 print("Mean Squared Error : ", mean_squared_error(y_test, predictions))
 print("Root Mean Squared Error : ", math.sqrt(mean_squared_error(y_test, predictions)))
+
+## Residual analysis of the train data
+# It tells us how much the errors are distributed across the model.
+# A good residual analysis will signify that the mean is centred around 0.
+residuals = y_test - predictions
+print(residuals)
+sns.displot(residuals, bins=30, kde=True)
+plt.show()
