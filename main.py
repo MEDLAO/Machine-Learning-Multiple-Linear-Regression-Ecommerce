@@ -13,8 +13,8 @@ df = pd.read_csv("ecommerce.csv")
 
 # Viewing the data
 # print(df.head()) # retrieving the first five rows of the dataframe
-# print(df.info()) # succinct summary
-# print(df.describe())
+print(df.info()) # succinct summary
+print(df.describe())
 
 ## E.D.A (Exploratory Data Analysis)
 sns.jointplot(x="Time on Website", y="Yearly Amount Spent", data=df, alpha=0.5)
@@ -48,7 +48,7 @@ model.fit(X_train, y_train)
 
 # Display the coefficients
 coeff = pd.DataFrame(model.coef_, X.columns, columns=['Coefficients'])
-#print(coeff)
+print(coeff)
 
 ## Making predictions on the test data set
 predictions = model.predict(X_test)

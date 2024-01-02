@@ -66,8 +66,10 @@ tzdata 2023.3
 
 ## 5. Conclusion :
 
-  * 
-  * 
-  * 
+  * Given the metrics obtained (MAE, MSE and RMSE) compared to the range of the dependant variable
+(Yearly Amount Spent) and the histogram of the residual which looks normally distributed, 
+we can affirm that the model has a pretty high accuracy.
+  * Moreover based on the model coefficients, we can conclude that the company should focus more
+their efforts on their mobile app experience.
 
 ---
